@@ -1,19 +1,12 @@
-class Player:
-    def play(self):
-        print("The player is playing cricket.")
+def factorial(n):
+    # Base case: factorial of 0 is 1
+    if n == 0:
+        return 1
+    # Recursive case: factorial of n is n multiplied by factorial of (n-1)
+    else:
+        return n * factorial(n - 1)
 
-class Batsman(Player):
-    def play(self):
-        print("The batsman is batting.")
-
-class Bowler(Player):
-    def play(self):
-        print("The bowler is bowling.")
-
-# Create objects of Batsman and Bowler classes
-batsman = Batsman()
-bowler = Bowler()
-
-# Call the play() method for each object
-batsman.play()
-bowler.play()
+# Example usage:
+number = 5
+result = factorial(number)
+print(f"The factorial of {number} is {result}")
